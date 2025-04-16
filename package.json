@@ -12,6 +12,7 @@
   "dependencies": {
     "@farmfe/js-plugin-postcss": "^1.12.0",
     "@iconify/json": "^2.2.328",
+    "@vitejs/plugin-vue-jsx": "^4.1.2",
     "vue": "^3.4.0"
   },
   "devDependencies": {

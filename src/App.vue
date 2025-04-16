@@ -1,9 +1,11 @@
-<script setup lang="ts" >
+<script setup lang="tsx" >
+import { Demo } from './Demo'
 </script>
 
 <template >
   <div class="bg-red-500 h-screen w-screen" >
     <i class="icon-material-symbols:10k" ></i>
+    <Demo/>
   </div>
 </template>
 
