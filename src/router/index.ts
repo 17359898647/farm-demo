@@ -15,12 +15,10 @@ function setupRouterGuard(router: Router) {
     next();
   });
 
-  // 解析守卫（在导航被确认之前，组件被解析之后调用）
   router.beforeResolve((to, from, next) => {
     next();
   });
 
-  // 后置守卫
   router.afterEach((to, from) => {
     const endTime = dayjs()
     console.debug(`导航耗时: ${endTime.diff(startTime, 'ms')}ms`);
