@@ -36,7 +36,9 @@ export default eslint({
           ],
         },
       ],
-      'vue/component-name-in-template-casing': [2, 'PascalCase'],
+      'vue/component-name-in-template-casing': [2, 'PascalCase', {
+        registeredComponentsOnly: false,
+      }],
       'vue/custom-event-name-casing': [2, 'camelCase', {
         ignores: [],
       }],

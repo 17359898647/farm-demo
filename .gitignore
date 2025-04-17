@@ -20,3 +20,6 @@ dist-ssr
 *.suo
 *.sln
 *.sw?
+
+/src/types/*
+!/src/types/routerType.d.ts

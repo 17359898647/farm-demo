@@ -20,7 +20,6 @@ export default defineConfig({
     presetIcons({
       extraProperties: {
         cursor: 'pointer',
-        display: 'inline-block',
       },
       prefix: 'icon-',
       warn: true,

@@ -13,7 +13,13 @@
     "@farmfe/js-plugin-postcss": "^1.12.0",
     "@iconify/json": "^2.2.328",
     "@vitejs/plugin-vue-jsx": "^4.1.2",
-    "vue": "^3.4.0"
+    "@vueuse/core": "^13.1.0",
+    "naive-ui": "^2.41.0",
+    "pinia": "^3.0.2",
+    "unplugin-vue-router": "^0.12.0",
+    "vfonts": "^0.0.3",
+    "vue": "^3.4.0",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
@@ -25,6 +31,8 @@
     "@vitejs/plugin-vue": "5.0.4",
     "core-js": "^3.30.1",
     "eslint": "^9.24.0",
-    "unocss": "^66.1.0-beta.11"
+    "unocss": "^66.1.0-beta.11",
+    "unplugin-auto-import": "^19.1.2",
+    "unplugin-vue-components": "^28.5.0"
   }
 }
