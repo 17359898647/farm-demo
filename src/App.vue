@@ -1,11 +1,14 @@
 <script setup lang="tsx" >
 import { Demo } from './Demo'
+
+import HelloWorld from '@/components/HelloWorld.vue';
 </script>
 
 <template >
   <div class="bg-red-500 h-screen w-screen" >
     <i class="icon-material-symbols:10k" ></i>
     <Demo/>
+    <HelloWorld msg="Hello World"/>
   </div>
 </template>
 
