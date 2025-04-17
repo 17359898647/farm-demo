@@ -18,7 +18,6 @@ export default defineConfig({
       getRouteName: getFileBasedRouteName,
       importMode: 'async',
       routesFolder: 'src/views',
-      logs: true,
     }),
     vue(),
     vueJsx(),
