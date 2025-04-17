@@ -3,29 +3,16 @@
     "target": "ESNext",
     "jsx": "preserve",
     "jsxImportSource": "vue",
-    "lib": ["DOM", "ESNext"],
-    "baseUrl": ".",
+    "lib": ["ESNext", "DOM"],
+    "useDefineForClassFields": true,
     "module": "ESNext",
-    "moduleResolution": "node",
-    "paths": {
-      "@/*": ["src/*"]
-    },
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "types": [
-      // "vite/client",
-      // "naive-ui/volar",
-      // "vitest/globals",
-      // "vite-plugin-vue-layouts/client",
-      // "vite-plugin-svg-icons/client",
-      // "vitest"
-    ],
-    "allowJs": true,
     "strict": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": false,
+    "noEmit": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "skipLibCheck": true
   },
-  "exclude": ["dist", "node_modules", "eslint.config.js"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "farm.config.ts", "**/*.d.ts"]
 }
