@@ -1,32 +1,27 @@
 <script setup lang="tsx" >
+import { darkTheme, dateZhCN, zhCN } from 'naive-ui';
 </script>
 
 <template >
-  <div class="bg-red-500 h-screen w-screen" >
-    <RouterLink to="/about" >
-      about
-    </RouterLink>
-    <RouterLink to="/" >
-      index
-    </RouterLink>
-    <RouterLink to="/home" >
-      home
-    </RouterLink>
-    <RouterView/>
-    <NSpace >
-      <NTag > 爱在西元前 </NTag>
-      <NTag type="success" >
-        不该
-      </NTag>
-      <NTag type="warning" >
-        超人不会飞
-      </NTag>
-      <NTag type="error" >
-        手写的从前
-      </NTag>
-      <NTag type="info" >
-        哪里都是你
-      </NTag>
-    </NSpace>
-  </div>
+  <NConfigProvider
+    class="size-full relative overflow-hidden"
+    :dateLocale="dateZhCN"
+    :inlineThemeDisabled="true"
+    :locale="zhCN"
+    :theme="isDark ? darkTheme : null"
+  >
+    <NMessageProvider >
+      <RouterLink to="/" >
+        Home
+      </RouterLink>
+      <RouterLink to="/about" >
+        About
+      </RouterLink>
+      <RouterLink to="/404" >
+        404
+      </RouterLink>
+      <RouterView/>
+      <NGlobalStyle/>
+    </NMessageProvider>
+  </NConfigProvider>
 </template>

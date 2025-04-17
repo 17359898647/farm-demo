@@ -22,7 +22,7 @@ export default defineConfig({
     vue(),
     vueJsx(),
     AutoImport({
-      dirs: ['./src/httpApi', './src/composables', './src/utils', './src/store/modules', './src/naiveHooks', './src/https'],
+      dirs: ['./src/composables'],
       dts: './src/types/auto-import.d.ts',
       eslintrc: {
         enabled: true,
