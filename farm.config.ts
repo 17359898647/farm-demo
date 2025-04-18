@@ -3,11 +3,7 @@ import path from 'node:path';
 import { defineConfig } from '@farmfe/core';
 import postcss from '@farmfe/js-plugin-postcss';
 import vue from '@vitejs/plugin-vue';
-import vueJsx from '@vitejs/plugin-vue-jsx'
-
-import { setupAutoComponents } from './src/plugins/autoComponents';
-import { setupAutoImport } from './src/plugins/autoImport';
-import { setupAutoRouter } from './src/plugins/autoRouter';
+import Inspector from 'unplugin-vue-inspector/vite'
 
 export default defineConfig({
   plugins: [
@@ -21,10 +17,7 @@ export default defineConfig({
     },
   },
   vitePlugins: [
-    setupAutoRouter(),
     vue(),
-    vueJsx(),
-    setupAutoImport(),
-    setupAutoComponents(),
+    Inspector(),
   ],
 });
